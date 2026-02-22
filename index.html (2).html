@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GBH Store - Melhor Loja de Blox Fruits do Brasil 🔥</title>
+<meta name="description" content="GBH Store: compre contas, frutas, Robux e gamepasses de Blox Fruits com entrega imediata via PIX.">
+<meta name="keywords" content="GBH Store, gbhstore, blox fruits, comprar conta blox fruits, robux, frutas blox fruits">
+<meta name="robots" content="index, follow">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Store","name":"GBH Store","url":"https://gbhstore.shop","description":"Melhor loja de Blox Fruits do Brasil.","areaServed":"BR","currenciesAccepted":"BRL","paymentAccepted":"PIX"}</script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --r:#cc1111;--r2:#e01515;--r3:#ff2222;--rd:#7a0000;--rg:#ff000066;
+  --bg:#080000;--bg3:#160000;
+  --card:#110000;--card2:#1a0000;
+  --b:#3a0000;--b2:#550000;
+  --t:#fff;--t2:#ccc;--t3:#999;
+  --gold:#f5c518;--green:#00cc55;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--t);font-family:'Rajdhani',sans-serif;min-height:100vh;overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 60% 50% at 15% 50%,#330000aa,transparent),radial-gradient(ellipse 50% 40% at 85% 20%,#220000aa,transparent);pointer-events:none;z-index:0;}
+body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,#00000014 2px,#00000014 4px);pointer-events:none;z-index:1;}
+.wrap{position:relative;z-index:2;}
+
+/* ======= HEADER ======= */
+header{
+  position:sticky;top:0;z-index:500;
+  background:#090000f2;
+  border-bottom:1.5px solid var(--rd);
+  backdrop-filter:blur(16px);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 20px;height:62px;
+  box-shadow:0 4px 24px #ff000022;
+  gap:14px;
+}
+.logo-area{display:flex;align-items:center;gap:8px;cursor:pointer;flex-shrink:0;}
+.logo-thumb{
+  width:34px;height:34px;
+  background:linear-gradient(135deg,var(--r),var(--rd));
+  border-radius:7px;display:flex;align-items:center;justify-content:center;
+  font-family:'Bebas Neue',sans-serif;font-size:1.1rem;color:#fff;
+  box-shadow:0 0 10px var(--rg);flex-shrink:0;
+}
+.logo-name{font-family:'Bebas Neue',sans-serif;font-size:1.45rem;letter-spacing:3px;color:var(--r3);text-shadow:0 0 16px var(--rg);}
+.logo-verified{color:var(--r2);font-size:.85rem;}
+.search-wrap{flex:1;max-width:460px;position:relative;}
+.search-input{
+  width:100%;background:var(--bg3);border:1px solid var(--b);
+  border-radius:8px;padding:9px 14px 9px 38px;
+  color:#fff;font-family:'Rajdhani',sans-serif;font-size:.93rem;
+  outline:none;transition:border-color .2s;
+}
+.search-input:focus{border-color:var(--r);}
+.search-input::placeholder{color:#553333;}
+.search-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:#664444;pointer-events:none;}
+.hright{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+.cart-btn{
+  background:var(--r);border:none;border-radius:8px;
+  padding:8px 16px;color:#fff;
+  font-family:'Rajdhani',sans-serif;font-size:.93rem;font-weight:700;
+  cursor:pointer;display:flex;align-items:center;gap:8px;
+  position:relative;transition:background .2s;letter-spacing:.5px;
+}
+.cart-btn:hover{background:var(--r2);box-shadow:0 0 14px var(--rg);}
+.cart-badge{
+  position:absolute;top:-6px;right:-6px;
+  background:#fff;color:var(--r);
+  border-radius:50%;width:18px;height:18px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:.63rem;font-weight:900;border:1.5px solid var(--r);
+}
+.user-btn{
+  width:36px;height:36px;border-radius:50%;
+  background:var(--bg3);border:1.5px solid var(--b);
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;transition:border-color .2s;color:#aaa;font-size:1.05rem;
+}
+.user-btn:hover{border-color:var(--r);}
+
+/* ======= PAGES ======= */
+#page-home,#page-cart{display:none;}
+#page-home{display:block;}
+
+/* ======= HOME ======= */
+.home-content{
+  display:flex;flex-direction:column;align-items:center;
+  justify-content:center;min-height:60vh;
+  text-align:center;padding:40px 20px;
+}
+.home-logo-big{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(4rem,12vw,9rem);
+  letter-spacing:8px;line-height:1;
+  background:linear-gradient(135deg,#ff6666,#ff0000,#880000);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+  filter:drop-shadow(0 0 22px #ff000088);
+  margin-bottom:10px;
+}
+.home-sub{font-size:1rem;color:#cc4444;letter-spacing:4px;font-weight:600;text-transform:uppercase;margin-bottom:20px;}
+.home-badge{
+  display:inline-block;
+  background:linear-gradient(135deg,var(--rd),var(--r));
+  padding:7px 22px;border-radius:20px;
+  font-size:.88rem;font-weight:700;letter-spacing:2px;
+  box-shadow:0 0 18px var(--rg);
+  animation:bp 2s ease-in-out infinite;
+}
+@keyframes bp{0%,100%{box-shadow:0 0 18px var(--rg);}50%{box-shadow:0 0 32px var(--rg),0 0 55px #ff000033;}}
+
+/* ======= CART PAGE ======= */
+#page-cart{padding:28px 20px;max-width:1200px;margin:0 auto;}
+.cart-page-title{font-size:1.35rem;font-weight:700;color:#fff;margin-bottom:4px;}
+.cart-page-sub{font-size:.82rem;color:#664444;margin-bottom:22px;}
+.cart-grid{display:grid;grid-template-columns:1fr 1.35fr 1fr;gap:14px;align-items:start;}
+@media(max-width:900px){.cart-grid{grid-template-columns:1fr;}}
+.panel{background:#0d0000;border:1px solid var(--b);border-radius:10px;padding:18px;}
+.panel-title{font-size:.95rem;font-weight:700;color:#fff;margin-bottom:14px;}
+.method-option{display:flex;align-items:center;gap:10px;background:#150000;border:1.5px solid var(--r);border-radius:8px;padding:10px 13px;margin-bottom:10px;}
+.radio{width:17px;height:17px;border-radius:50%;border:2px solid var(--r);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.radio::after{content:'';width:7px;height:7px;border-radius:50%;background:var(--r);}
+.method-name{font-size:.88rem;font-weight:600;color:#ccc;}
+.form-label{font-size:.8rem;color:#aaa;margin-bottom:5px;display:block;}
+.form-input{
+  width:100%;background:#150000;border:1.5px solid var(--b);
+  border-radius:8px;padding:9px 12px;color:#fff;
+  font-family:'Rajdhani',sans-serif;font-size:.88rem;
+  outline:none;margin-bottom:12px;transition:border-color .2s;
+}
+.form-input:focus{border-color:var(--r);}
+.coupon-box{border:1.5px dashed var(--b);border-radius:8px;padding:11px 13px;display:flex;align-items:center;justify-content:space-between;gap:9px;margin-top:4px;}
+.coupon-left{display:flex;align-items:center;gap:9px;}
+.coupon-text strong{display:block;font-size:.82rem;color:#ccc;font-weight:700;}
+.coupon-text span{font-size:.72rem;color:#664444;}
+.coupon-add-btn{background:transparent;border:1.5px solid var(--b);color:#ccc;padding:6px 12px;border-radius:6px;font-family:'Rajdhani',sans-serif;font-size:.8rem;font-weight:700;cursor:pointer;white-space:nowrap;transition:border-color .2s;}
+.coupon-add-btn:hover{border-color:var(--r);color:#fff;}
+.products-title-row{display:flex;align-items:center;gap:9px;margin-bottom:14px;}
+.items-badge{background:var(--r);color:#fff;font-size:.7rem;font-weight:700;padding:2px 9px;border-radius:12px;}
+.cart-item{border:1.5px solid #2a0000;border-radius:8px;padding:12px;margin-bottom:11px;background:#110000;}
+.cart-item:last-child{margin-bottom:0;}
+.item-top{display:flex;align-items:center;gap:11px;margin-bottom:9px;}
+.item-img{width:50px;height:50px;border-radius:8px;background:linear-gradient(135deg,#2a0000,#150000);display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;}
+.item-name{flex:1;font-size:.82rem;font-weight:700;color:#eee;line-height:1.3;}
+.item-price{font-size:.95rem;font-weight:700;color:#fff;white-space:nowrap;}
+.item-bottom{display:flex;align-items:center;justify-content:space-between;}
+.item-stock{font-size:.7rem;color:#664444;}
+.item-actions{display:flex;align-items:center;gap:7px;}
+.iabtn{width:27px;height:27px;border-radius:6px;border:none;display:flex;align-items:center;justify-content:center;font-size:.78rem;cursor:pointer;transition:all .2s;}
+.del-btn{background:#2a0000;color:#cc4444;}
+.del-btn:hover{background:var(--r);color:#fff;}
+.fast-btn{background:#1a1a00;color:#ccaa00;}
+.qty-ctrl{display:flex;align-items:center;border:1.5px solid var(--b);border-radius:6px;overflow:hidden;}
+.qty-btn-s{width:27px;height:27px;background:#1a0000;border:none;color:#fff;font-size:.95rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s;}
+.qty-btn-s:hover{background:var(--r);}
+.qty-num-s{width:30px;text-align:center;background:#0d0000;border:none;outline:none;color:#fff;font-family:'Rajdhani',sans-serif;font-size:.88rem;font-weight:700;padding:4px 0;border-left:1px solid var(--b);border-right:1px solid var(--b);}
+.resumo-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:9px;font-size:.88rem;}
+.resumo-label{color:#aaa;}
+.resumo-val{color:#fff;font-weight:600;}
+.resumo-divider{height:1px;background:#2a0000;margin:11px 0;}
+.total-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;}
+.total-label{font-size:.95rem;font-weight:700;color:#fff;}
+.total-val{font-size:1.05rem;font-weight:700;color:#fff;}
+.termos-row{display:flex;align-items:flex-start;gap:7px;margin-bottom:14px;font-size:.78rem;color:#888;line-height:1.4;}
+.check-box{width:17px;height:17px;border-radius:4px;background:var(--green);border:none;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;cursor:pointer;font-size:.75rem;}
+.termos-link{color:var(--r);cursor:pointer;text-decoration:underline;}
+.gerar-btn{width:100%;background:var(--r);border:none;border-radius:8px;padding:13px;color:#fff;font-family:'Rajdhani',sans-serif;font-size:1rem;font-weight:700;letter-spacing:1px;cursor:pointer;text-transform:uppercase;transition:all .2s;}
+.gerar-btn:hover{background:var(--r2);box-shadow:0 0 18px var(--rg);}
+.empty-cart{text-align:center;padding:36px 20px;color:#554444;}
+.empty-icon{font-size:2.8rem;margin-bottom:10px;}
+.empty-text{font-size:.88rem;margin-bottom:14px;}
+.empty-btn{background:var(--r);border:none;color:#fff;padding:10px 22px;border-radius:8px;font-family:'Rajdhani',sans-serif;font-size:.9rem;font-weight:700;letter-spacing:1px;cursor:pointer;transition:background .2s;text-transform:uppercase;}
+.empty-btn:hover{background:var(--r2);}
+
+/* ======= PROMO SECTION ======= */
+.promo-section{padding:28px 20px 32px;}
+
+.promo-title-btn{
+  display:block;
+  width:fit-content;
+  margin:0 auto 22px;
+  background:transparent;
+  border:1.5px solid var(--b2);
+  border-radius:10px;
+  padding:12px 48px;
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1.3rem;
+  letter-spacing:4px;
+  color:#fff;
+  cursor:default;
+  text-align:center;
+}
+
+.promo-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  max-width:900px;
+  margin:0 auto;
+}
+@media(max-width:700px){.promo-grid{grid-template-columns:1fr;}}
+
+.promo-card{
+  background:linear-gradient(160deg,var(--card2),var(--card));
+  border:1px solid var(--b);
+  border-radius:12px;
+  overflow:hidden;
+  cursor:pointer;
+  transition:all .22s;
+}
+.promo-card:hover{border-color:var(--r);transform:translateY(-3px);box-shadow:0 8px 24px #ff000033;}
+
+.promo-img{
+  width:100%;height:130px;
+  background:linear-gradient(135deg,#200000,#0d0000);
+  display:flex;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;
+}
+/* watermark grid no fundo */
+.promo-img-wm{
+  position:absolute;inset:0;
+  display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(3,1fr);
+  pointer-events:none;
+}
+.promo-img-wm span{
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Rajdhani',sans-serif;font-size:.42rem;letter-spacing:1px;
+  color:#ffffff07;transform:rotate(-20deg);user-select:none;
+}
+.promo-img-inner{
+  position:relative;z-index:1;
+  display:flex;align-items:center;gap:12px;
+  padding:0 14px;width:100%;
+}
+.promo-emoji{
+  width:54px;height:54px;flex-shrink:0;
+  background:#ffffff11;border-radius:10px;border:1px solid #ffffff22;
+  display:flex;align-items:center;justify-content:center;
+  font-size:2rem;
+}
+.promo-img-name{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1.5rem;letter-spacing:2px;
+  color:#fff;line-height:1.1;
+  text-shadow:0 2px 8px #000;
+}
+.promo-store-wm{position:absolute;top:5px;left:8px;font-size:.42rem;color:#ffffff22;font-family:'Rajdhani',sans-serif;letter-spacing:1px;}
+
+.promo-body{padding:11px 12px;}
+.promo-name{font-weight:700;font-size:.82rem;color:#ddd;margin-bottom:7px;}
+.promo-pr{display:flex;align-items:center;gap:7px;margin-bottom:3px;flex-wrap:wrap;}
+.promo-old{font-size:.72rem;color:#444;text-decoration:line-through;}
+.promo-disc{background:#006633;color:#fff;font-size:.62rem;font-weight:700;padding:2px 6px;border-radius:3px;}
+.promo-new{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;color:var(--r3);}
+.promo-pix{font-size:.65rem;color:#773333;margin-bottom:10px;}
+
+.promo-btns{display:flex;align-items:center;gap:8px;}
+.promo-buy{
+  flex:1;background:var(--r);border:none;color:#fff;
+  padding:9px;border-radius:7px;
+  font-family:'Rajdhani',sans-serif;font-size:.9rem;font-weight:700;
+  letter-spacing:1px;cursor:pointer;text-transform:uppercase;
+  transition:all .18s;
+}
+.promo-buy:hover{background:var(--r2);box-shadow:0 0 14px var(--rg);}
+.promo-cart-icon{
+  width:36px;height:36px;flex-shrink:0;
+  background:var(--rd);border:1px solid var(--r);border-radius:7px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1rem;cursor:pointer;transition:all .18s;
+}
+.promo-cart-icon:hover{background:var(--r);}
+
+/* lightning icon on price */
+.price-row-wrap{display:flex;align-items:center;justify-content:space-between;}
+.lightning{
+  width:28px;height:28px;
+  background:var(--rd);border:1px solid var(--r);border-radius:6px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:.9rem;flex-shrink:0;
+}
+
+/* ======= PRODUCT DETAIL PAGE ======= */
+#page-product{display:none;padding:0 0 40px;}
+
+.pd-bc{
+  padding:14px 24px;font-size:.82rem;color:#555;
+  display:flex;align-items:center;gap:6px;
+  border-bottom:1px solid var(--b);
+}
+.pd-bc a{color:#888;cursor:pointer;text-decoration:none;}
+.pd-bc a:hover{color:#fff;}
+.pd-bc-sep{color:#444;}
+.pd-bc-cur{color:#fff;font-weight:600;}
+
+.pd-main{
+  display:grid;
+  grid-template-columns:520px 1fr 320px;
+  gap:28px;
+  padding:28px 24px 0;
+  max-width:1200px;
+}
+@media(max-width:1100px){.pd-main{grid-template-columns:1fr 1fr;}}
+@media(max-width:700px){.pd-main{grid-template-columns:1fr;padding:16px;}}
+
+/* --- Image --- */
+.pd-img-box{
+  border-radius:12px;overflow:hidden;
+  border:1.5px solid var(--b2);
+  aspect-ratio:16/10;
+  background:linear-gradient(135deg,#1a0000,#080000);
+  position:relative;
+  display:flex;align-items:center;justify-content:flex-start;
+  padding:20px;gap:16px;
+}
+.pd-img-wm-bg{
+  position:absolute;inset:0;
+  display:flex;flex-wrap:wrap;overflow:hidden;
+  pointer-events:none;
+}
+.pd-img-wm-bg span{
+  font-family:'Bebas Neue',sans-serif;font-size:.75rem;
+  letter-spacing:2px;color:#ffffff09;
+  white-space:nowrap;padding:6px 8px;
+  user-select:none;transform:rotate(0deg);
+}
+.pd-store-pill{
+  position:absolute;top:10px;left:50%;transform:translateX(-50%);
+  background:#ff000022;border:1px solid var(--b2);
+  padding:3px 14px;border-radius:20px;
+  font-size:.6rem;letter-spacing:2px;color:#fff;
+  font-family:'Bebas Neue',sans-serif;white-space:nowrap;z-index:2;
+}
+.pd-img-icon{
+  width:90px;height:90px;flex-shrink:0;
+  background:#ffffff15;border-radius:14px;border:2px solid var(--r);
+  display:flex;align-items:center;justify-content:center;
+  font-size:3.5rem;position:relative;z-index:1;
+}
+.pd-img-title{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(2rem,4vw,3rem);
+  letter-spacing:3px;color:#fff;
+  text-shadow:0 2px 12px #000;
+  line-height:1.05;position:relative;z-index:1;
+}
+
+/* --- Info Middle --- */
+.pd-info{}
+.pd-sold{font-size:.82rem;color:var(--green);margin-bottom:6px;font-weight:600;}
+.pd-name{font-size:1.3rem;font-weight:700;color:#fff;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--b);}
+.pd-price-old{font-size:.9rem;color:#555;text-decoration:line-through;margin-bottom:4px;}
+.pd-price-row{display:flex;align-items:baseline;gap:10px;margin-bottom:10px;}
+.pd-disc-pct{color:var(--green);font-weight:700;font-size:1rem;}
+.pd-price-big{font-size:2rem;font-weight:900;color:#fff;line-height:1;}
+.pd-price-big sup{font-size:1rem;font-weight:700;vertical-align:super;}
+.pd-price-big sub{font-size:1rem;font-weight:700;}
+.pd-delivery-tag{
+  display:inline-flex;align-items:center;gap:7px;
+  background:var(--r);
+  border-radius:6px;padding:6px 14px;
+  font-size:.82rem;font-weight:700;color:#fff;
+  margin-bottom:20px;
+}
+
+/* --- Buy Box --- */
+.pd-buy-box{
+  background:#0d0000;
+  border:1.5px solid var(--b2);
+  border-radius:12px;padding:20px;
+}
+.pd-stock-title{font-size:.9rem;font-weight:700;color:#fff;margin-bottom:6px;}
+.pd-stock-price{font-size:2rem;font-weight:900;color:#fff;margin-bottom:4px;}
+.pd-stock-price sup{font-size:1rem;font-weight:700;vertical-align:super;}
+.pd-stock-price sub{font-size:1rem;}
+.pd-stock-avail{font-size:.8rem;color:#888;margin-bottom:16px;}
+
+.pd-qty-row{display:flex;align-items:center;gap:0;margin-bottom:14px;border:1.5px solid var(--b2);border-radius:8px;overflow:hidden;width:fit-content;}
+.pd-qty-btn{
+  width:38px;height:38px;background:#1a0000;border:none;
+  color:#fff;font-size:1.2rem;font-weight:700;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .2s;
+}
+.pd-qty-btn:hover{background:var(--r);}
+.pd-qty-num{
+  width:60px;text-align:center;background:#0d0000;
+  border:none;outline:none;color:#fff;
+  font-family:'Rajdhani',sans-serif;font-size:1rem;font-weight:700;
+  padding:8px 0;
+  border-left:1px solid var(--b2);border-right:1px solid var(--b2);
+}
+
+.pd-comprar-btn{
+  width:100%;background:var(--r);border:none;
+  color:#fff;padding:14px;border-radius:8px;
+  font-family:'Rajdhani',sans-serif;font-size:1.05rem;font-weight:700;
+  letter-spacing:1px;cursor:pointer;text-transform:uppercase;
+  margin-bottom:10px;transition:all .2s;
+}
+.pd-comprar-btn:hover{background:var(--r2);box-shadow:0 0 20px var(--rg);}
+
+.pd-addcart-btn{
+  width:100%;background:#111;border:1.5px solid var(--b2);
+  color:#fff;padding:12px;border-radius:8px;
+  font-family:'Rajdhani',sans-serif;font-size:1rem;font-weight:700;
+  letter-spacing:1px;cursor:pointer;text-transform:uppercase;
+  transition:all .2s;
+}
+.pd-addcart-btn:hover{border-color:var(--r);background:#1a0000;}
+
+.pd-payment-box{
+  background:#0d0000;border:1.5px solid var(--b2);
+  border-radius:12px;padding:16px;margin-top:14px;
+}
+.pd-payment-title{font-size:.85rem;font-weight:700;color:#fff;margin-bottom:6px;}
+.pd-payment-sub{font-size:.78rem;color:#666;margin-bottom:10px;}
+.pd-pix-icon{font-size:1.6rem;}
+
+/* Description */
+.pd-desc-section{
+  padding:28px 24px 0;
+  max-width:1200px;
+  border-top:1px solid var(--b);
+  margin-top:28px;
+}
+.pd-desc-title{font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:14px;}
+.pd-desc-body{font-size:.88rem;color:#bbb;line-height:1.8;white-space:pre-line;}
+
+/* ======= FOOTER ======= */
+.site-footer{background:#050000;border-top:2px solid var(--b);padding:26px 20px;display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+.fbrand{max-width:260px;}
+.flogo{display:flex;align-items:center;gap:7px;margin-bottom:8px;}
+.flogo-icon{width:26px;height:26px;background:var(--r);border-radius:5px;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:.82rem;}
+.flogo-name{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:2px;color:var(--r2);}
+.fdesc{font-size:.78rem;color:#553333;line-height:1.5;}
+.fpol h4{font-size:.8rem;font-weight:700;color:var(--t2);margin-bottom:8px;letter-spacing:1px;}
+.fpol a{display:block;font-size:.78rem;color:#884444;text-decoration:none;margin-bottom:5px;}
+.fpol a:hover{color:var(--r3);}
+.fcopy{width:100%;text-align:center;font-size:.7rem;color:#332222;padding-top:13px;border-top:1px solid var(--b);}
+
+/* ======= PIX MODAL ======= */
+.modal-overlay{display:none;position:fixed;inset:0;background:#000000cc;z-index:900;align-items:center;justify-content:center;backdrop-filter:blur(8px);}
+.modal-overlay.active{display:flex;}
+.modal{background:linear-gradient(160deg,#1a0000,#080000);border:2px solid var(--r);border-radius:16px;padding:26px;max-width:380px;width:92%;position:relative;box-shadow:0 0 50px var(--rg);text-align:center;animation:min .25s ease;}
+@keyframes min{from{transform:scale(.88);opacity:0;}to{transform:scale(1);opacity:1;}}
+.mclose{position:absolute;top:11px;right:13px;font-size:1.3rem;cursor:pointer;color:#884444;background:none;border:none;}
+.mclose:hover{color:var(--r3);}
+.mtbadge{display:inline-block;background:var(--rd);border:1px solid var(--r);border-radius:6px;padding:3px 12px;font-size:.66rem;font-weight:700;letter-spacing:2px;color:#fff;margin-bottom:10px;text-transform:uppercase;}
+.mtitle{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:3px;color:var(--r3);margin-bottom:4px;text-shadow:0 0 12px var(--rg);}
+.mprod{font-size:.8rem;color:#aaa;margin-bottom:4px;line-height:1.4;}
+.mprice{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;color:var(--r3);margin-bottom:14px;}
+#qr-container{background:#fff;border-radius:10px;padding:9px;margin:0 auto 13px;width:fit-content;min-width:158px;min-height:158px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 24px var(--rg);}
+.pix-key-box{background:var(--bg3);border:1px dashed var(--r);border-radius:8px;padding:9px 12px;margin-bottom:12px;text-align:left;}
+.pkb-lbl{font-size:.63rem;color:var(--r);font-weight:700;letter-spacing:1px;margin-bottom:4px;text-transform:uppercase;}
+.pkb-val{font-size:.83rem;color:var(--gold);font-weight:700;word-break:break-all;}
+.cpix-btn{width:100%;background:linear-gradient(135deg,var(--rd),var(--r2));border:none;color:#fff;padding:10px;border-radius:8px;font-family:'Rajdhani',sans-serif;font-size:.9rem;font-weight:700;letter-spacing:1px;cursor:pointer;text-transform:uppercase;transition:all .2s;margin-bottom:8px;}
+.cpix-btn:hover{background:linear-gradient(135deg,var(--r2),var(--r3));box-shadow:0 0 14px var(--rg);}
+.mnote{font-size:.7rem;color:#663333;line-height:1.5;}
+
+/* TOAST */
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:#1a0000;border:1px solid var(--r);border-radius:8px;padding:10px 20px;font-size:.88rem;font-weight:700;color:#fff;z-index:9999;transition:transform .3s ease;white-space:nowrap;box-shadow:0 4px 20px var(--rg);}
+.toast.show{transform:translateX(-50%) translateY(0);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- HEADER -->
+<header>
+  <div class="logo-area" onclick="goHome()">
+    <div class="logo-thumb">G</div>
+    <span class="logo-name">GBH Store</span>
+    <span class="logo-verified">✔</span>
+  </div>
+  <div class="search-wrap">
+    <svg class="search-icon" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <input class="search-input" type="text" placeholder="Pesquisar produto">
+  </div>
+  <div class="hright">
+    <button class="cart-btn" onclick="goCart()">
+      🛒 Carrinho
+      <span class="cart-badge" id="cart-badge">0</span>
+    </button>
+    <div class="user-btn">👤</div>
+  </div>
+</header>
+
+<!-- ===== HOME ===== -->
+<div id="page-home">
+  <div class="home-content">
+    <div class="home-logo-big">GBH STORE</div>
+    <div class="home-sub">⚔️ A Melhor Loja de Blox Fruits ⚔️</div>
+    <div class="home-badge">🔥 ENTREGA IMEDIATA • PIX 24H</div>
+  </div>
+
+  <!-- PROMOÇÃO -->
+  <div class="promo-section">
+    <div class="promo-title-btn">PROMOÇÃO 🏷️</div>
+    <div class="promo-grid">
+
+      <!-- Card 1: Caixa PIX -->
+      <div class="promo-card" onclick="openProd('caixa-pix')">
+        <div class="promo-img">
+          <div class="promo-img-wm"><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span></div>
+          <span class="promo-store-wm">GBHStore.shop</span>
+          <div class="promo-img-inner">
+            <div class="promo-emoji">💰</div>
+            <div class="promo-img-name">CAIXA<br>PIX</div>
+          </div>
+        </div>
+        <div class="promo-body">
+          <div class="promo-name">💰 CAIXA PIX 💰</div>
+          <div class="promo-pr"><span class="promo-old">R$ 3,69</span><span class="promo-disc">↓ 46%</span></div>
+          <div class="price-row-wrap">
+            <div><div class="promo-new">R$ 1,99</div><div class="promo-pix">À vista no PIX</div></div>
+            <div class="lightning">⚡</div>
+          </div>
+          <div class="promo-btns">
+            <button class="promo-buy" onclick="event.stopPropagation();addCart('caixa-pix','💰 CAIXA PIX 💰','💰',1.99,99)">Comprar</button>
+            <div class="promo-cart-icon" onclick="event.stopPropagation();addCart('caixa-pix','💰 CAIXA PIX 💰','💰',1.99,99)">🛒</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Roleta de Robux -->
+      <div class="promo-card" onclick="openProd('roleta-robux')">
+        <div class="promo-img">
+          <div class="promo-img-wm"><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span></div>
+          <span class="promo-store-wm">GBHStore.shop</span>
+          <div class="promo-img-inner">
+            <div class="promo-emoji">💎</div>
+            <div class="promo-img-name">ROLETA<br>DE ROBUX</div>
+          </div>
+        </div>
+        <div class="promo-body">
+          <div class="promo-name">🔥 CAIXA ROBUX 🔥</div>
+          <div class="promo-pr"><span class="promo-old">R$ 5,99</span><span class="promo-disc">↓ 33%</span></div>
+          <div class="price-row-wrap">
+            <div><div class="promo-new">R$ 3,99</div><div class="promo-pix">À vista no PIX</div></div>
+            <div class="lightning">⚡</div>
+          </div>
+          <div class="promo-btns">
+            <button class="promo-buy" onclick="event.stopPropagation();addCart('roleta-robux','🔥 CAIXA ROBUX 🔥','💎',3.99,99)">Comprar</button>
+            <div class="promo-cart-icon" onclick="event.stopPropagation();addCart('roleta-robux','🔥 CAIXA ROBUX 🔥','💎',3.99,99)">🛒</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Compra Surpresa -->
+      <div class="promo-card" onclick="openProd('compra-surpresa')">
+        <div class="promo-img">
+          <div class="promo-img-wm"><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span><span>GBHStore.shop</span></div>
+          <span class="promo-store-wm">GBHStore.shop</span>
+          <div class="promo-img-inner">
+            <div class="promo-emoji">🎁</div>
+            <div class="promo-img-name">COMPRA<br>SURPRESA</div>
+          </div>
+        </div>
+        <div class="promo-body">
+          <div class="promo-name">🍀 QUALQUER PRODUTO DA LOJA</div>
+          <div class="promo-pr"><span class="promo-old">R$ 15,99</span><span class="promo-disc">↓ 43%</span></div>
+          <div class="price-row-wrap">
+            <div><div class="promo-new">R$ 8,99</div><div class="promo-pix">À vista no PIX</div></div>
+            <div class="lightning">⚡</div>
+          </div>
+          <div class="promo-btns">
+            <button class="promo-buy" onclick="event.stopPropagation();addCart('compra-surpresa','🍀 QUALQUER PRODUTO DA LOJA','🎁',8.99,99)">Comprar</button>
+            <div class="promo-cart-icon" onclick="event.stopPropagation();addCart('compra-surpresa','🍀 QUALQUER PRODUTO DA LOJA','🎁',8.99,99)">🛒</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="fbrand">
+      <div class="flogo">
+        <div class="flogo-icon">G</div>
+        <div class="flogo-name">GBH STORE</div>
+      </div>
+      <div class="fdesc">A melhor lojinha de blox fruits atualmente!!!</div>
+    </div>
+    <div class="fpol">
+      <h4>Políticas</h4>
+      <a href="#">Termos de serviço</a>
+      <a href="#">Políticas de Cookies</a>
+    </div>
+    <div class="fcopy">© 2026 GBH Store. Todos os direitos reservados.</div>
+  </footer>
+</div>
+
+<!-- ===== PRODUTO DETALHE ===== -->
+<div id="page-product">
+  <!-- Breadcrumb -->
+  <div class="pd-bc">
+    <a onclick="goHome()">Início</a>
+    <span class="pd-bc-sep">›</span>
+    <a onclick="goHome()">Produtos</a>
+    <span class="pd-bc-sep">›</span>
+    <span class="pd-bc-cur" id="pd-bc-name">Produto</span>
+  </div>
+
+  <!-- Main area -->
+  <div class="pd-main">
+
+    <!-- Imagem -->
+    <div class="pd-img-box">
+      <div class="pd-img-wm-bg" id="pd-wm-bg"></div>
+      <div class="pd-store-pill">GBHStore.shop</div>
+      <div class="pd-img-icon" id="pd-icon">💰</div>
+      <div class="pd-img-title" id="pd-img-title">CAIXA<br>PIX</div>
+    </div>
+
+    <!-- Info central -->
+    <div class="pd-info">
+      <div class="pd-sold" id="pd-sold">+300 Vendidos</div>
+      <div class="pd-name" id="pd-name">💰 CAIXA PIX 💰</div>
+
+      <div class="pd-price-old" id="pd-old">R$ 3,69</div>
+      <div class="pd-price-row">
+        <span class="pd-disc-pct" id="pd-disc-pct">-46%</span>
+        <span class="pd-price-big"><sup>R$</sup> <span id="pd-price-int">1</span><sub id="pd-price-dec">,99</sub></span>
+      </div>
+
+      <div class="pd-delivery-tag">⚡ Entrega Automática</div>
+    </div>
+
+    <!-- Buy box -->
+    <div>
+      <div class="pd-buy-box">
+        <div class="pd-stock-title">Estoque disponível</div>
+        <div class="pd-stock-price"><sup>R$</sup> <span id="pd-box-int">1</span><sub id="pd-box-dec">,99</sub></div>
+        <div class="pd-stock-avail" id="pd-avail">62 Disponível</div>
+
+        <div class="pd-qty-row">
+          <button class="pd-qty-btn" onclick="pdChQty(-1)">-</button>
+          <input class="pd-qty-num" id="pd-qty" type="number" value="1" min="1" max="99" oninput="pdUpdPrice()">
+          <button class="pd-qty-btn" onclick="pdChQty(1)">+</button>
+        </div>
+
+        <button class="pd-comprar-btn" onclick="pdComprar()">Comprar agora</button>
+        <button class="pd-addcart-btn" id="pd-addcart" onclick="pdAddCart()">Adicionar ao carrinho</button>
+      </div>
+
+      <div class="pd-payment-box">
+        <div class="pd-payment-title">Meios de pagamentos</div>
+        <div class="pd-payment-sub">À vista</div>
+        <div class="pd-pix-icon">💸</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Descrição -->
+  <div class="pd-desc-section">
+    <div class="pd-desc-title">Descrição</div>
+    <div class="pd-desc-body" id="pd-desc"></div>
+  </div>
+</div>
+
+<!-- ===== CARRINHO ===== -->
+<div id="page-cart">
+  <div class="cart-page-title">Carrinhos de compras</div>
+  <div class="cart-page-sub">Nesta página, você encontra os produtos adicionados ao seu carrinho.</div>
+
+  <div class="cart-grid">
+    <!-- COL 1: PAGAMENTO -->
+    <div class="panel">
+      <div class="panel-title">Informações de pagamento</div>
+      <div class="method-option">
+        <div class="radio"></div>
+        <span style="font-size:1.1rem;">💸</span>
+        <span class="method-name">Pix</span>
+      </div>
+      <label class="form-label">Informe o seu e-mail</label>
+      <input class="form-input" type="email" id="email1" placeholder="seuemail@gmail.com">
+      <label class="form-label">Informe novamente o seu e-mail</label>
+      <input class="form-input" type="email" id="email2" placeholder="seuemail@gmail.com">
+      <div class="coupon-box">
+        <div class="coupon-left">
+          <span style="font-size:1rem;">🏷️</span>
+          <div class="coupon-text">
+            <strong>Cupom de desconto</strong>
+            <span>Adicione desconto em seu pedido!</span>
+          </div>
+        </div>
+        <button class="coupon-add-btn" onclick="applyCoupon()">🏷️ Adicionar</button>
+      </div>
+    </div>
+
+    <!-- COL 2: PRODUTOS -->
+    <div class="panel">
+      <div class="products-title-row">
+        <div class="panel-title" style="margin:0">Produtos no carrinho</div>
+        <span class="items-badge" id="items-badge">0 itens</span>
+      </div>
+      <div id="cart-items-list"></div>
+      <div class="empty-cart" id="empty-msg">
+        <div class="empty-icon">🛒</div>
+        <div class="empty-text">Seu carrinho está vazio!</div>
+        <button class="empty-btn" onclick="goHome()">Ver produtos</button>
+      </div>
+    </div>
+
+    <!-- COL 3: RESUMO -->
+    <div class="panel">
+      <div class="panel-title">Resumo da compra</div>
+      <div class="resumo-row"><span class="resumo-label">Subtotal</span><span class="resumo-val" id="subtotal-val">R$ 0,00</span></div>
+      <div class="resumo-row"><span class="resumo-label">Método</span><span class="resumo-val" style="color:#00cc77;">💸 Pix</span></div>
+      <div class="resumo-divider"></div>
+      <div class="total-row"><span class="total-label">Total</span><span class="total-val" id="total-val">R$ 0,00</span></div>
+      <div class="termos-row">
+        <div class="check-box" id="termos-check" onclick="toggleTermos()">✓</div>
+        <span>li e concordo com os <span class="termos-link">Termos de Serviço</span></span>
+      </div>
+      <button class="gerar-btn" onclick="gerarPagamento()">Gerar pagamento</button>
+    </div>
+  </div>
+</div>
+
+</div><!-- wrap -->
+
+<!-- PIX MODAL -->
+<div class="modal-overlay" id="pix-modal">
+  <div class="modal">
+    <button class="mclose" onclick="closeMod()">✕</button>
+    <div class="mtbadge">🔒 PAGAMENTO SEGURO</div>
+    <div class="mtitle">PAGAR COM PIX</div>
+    <div class="mprod" id="m-prod"></div>
+    <div class="mprice" id="m-price"></div>
+    <div id="qr-container"><div id="qr-gen"></div></div>
+    <div class="pix-key-box">
+      <div class="pkb-lbl">📱 Chave PIX (Telefone):</div>
+      <div class="pkb-val">5532984808144</div>
+    </div>
+    <button class="cpix-btn" onclick="copyT('5532984808144',this)">📋 COPIAR CHAVE PIX</button>
+    <div class="mnote">⚠️ Após o pagamento, envie o comprovante no Discord ou WhatsApp para receber o produto!</div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+/* ===== PRODUCT DATA ===== */
+const PRODS_DATA = {
+  'caixa-pix': {
+    id: 'caixa-pix', emoji: '💰', imgTitle: 'CAIXA\nPIX',
+    sold: '+300 Vendidos', name: '💰 CAIXA PIX 💰',
+    old: 'R$ 3,69', disc: '-46%', price: 1.99,
+    priceInt: '1', priceDec: ',99',
+    avail: '62 Disponível', stock: 99,
+    desc: `Caixa Pix — Prêmios Instantâneos! 🎇
+DISPONÍVEL:
+• PIX de R$0
+• PIX de R$150
+(OBS: PROBABILIDADE MAIOR É DE PERCA!)
+
+⚠️ isso e um cassino, fique avisado que vc tem chance de perder e tambem de ganhar, mas lembre tem chance de perder!!!
+🎆 Receba direto na sua conta!
+🏆 Clique. Abra. Ganhe.`
+  },
+  'roleta-robux': {
+    id: 'roleta-robux', emoji: '💎', imgTitle: 'ROLETA\nDE ROBUX',
+    sold: '+100 Vendidos', name: '🔥 CAIXA ROBUX 🔥',
+    old: 'R$ 5,99', disc: '-33%', price: 3.99,
+    priceInt: '3', priceDec: ',99',
+    avail: '57 Disponível', stock: 99,
+    desc: `🎁 Roleta Robux— Prêmios Instantâneos! 🎇
+DISPONÍVEL:
+• 0 Robux
+
+• 2000 Robux
+
+(OBS: PROBABILIDADE MAIOR É DE PERCA!)
+⚠️ isso e um cassino, fique avisado que vc tem chance de perder e tambem de ganhar, mas lembre tem chance de perder!!!
+🎆 Receba direto na sua conta!, Robux com taxa
+🏆 Clique. Abra. Ganhe`
+  },
+  'compra-surpresa': {
+    id: 'compra-surpresa', emoji: '🎁', imgTitle: 'COMPRA\nSURPRESA',
+    sold: '+30 Vendidos', name: '🍀 QUALQUER PRODUTO DA LOJA',
+    old: 'R$ 15,99', disc: '-43%', price: 8.99,
+    priceInt: '8', priceDec: ',99',
+    avail: '60 Disponível', stock: 99,
+    desc: `VOCE IRA GANHAR QUALQUER PRODUTO DA GBH STORE!`
+  }
+};
+
+let curProd = null;
+
+/* ===== OPEN PRODUCT PAGE ===== */
+function openProd(id) {
+  const p = PRODS_DATA[id];
+  if (!p) return;
+  curProd = p;
+
+  // fill breadcrumb
+  document.getElementById('pd-bc-name').textContent = p.name;
+  // fill image
+  document.getElementById('pd-icon').textContent = p.emoji;
+  const lines = p.imgTitle.split('\n');
+  document.getElementById('pd-img-title').innerHTML = lines.join('<br>');
+  // watermark
+  const wm = document.getElementById('pd-wm-bg');
+  wm.innerHTML = Array(60).fill('<span>GBHSTORE GBHSTORE GBHSTORE</span>').join('');
+  // fill info
+  document.getElementById('pd-sold').textContent = p.sold;
+  document.getElementById('pd-name').textContent = p.name;
+  document.getElementById('pd-old').textContent = p.old;
+  document.getElementById('pd-disc-pct').textContent = p.disc;
+  document.getElementById('pd-price-int').textContent = p.priceInt;
+  document.getElementById('pd-price-dec').textContent = p.priceDec;
+  // buy box
+  document.getElementById('pd-box-int').textContent = p.priceInt;
+  document.getElementById('pd-box-dec').textContent = p.priceDec;
+  document.getElementById('pd-avail').textContent = p.avail;
+  document.getElementById('pd-qty').value = 1;
+  // description
+  document.getElementById('pd-desc').textContent = p.desc;
+  // reset add cart btn
+  const btn = document.getElementById('pd-addcart');
+  btn.textContent = 'Adicionar ao carrinho';
+  btn.style.borderColor = '';
+
+  // show page
+  document.getElementById('page-home').style.display = 'none';
+  document.getElementById('page-product').style.display = 'block';
+  document.getElementById('page-cart').style.display = 'none';
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+function pdChQty(d) {
+  const i = document.getElementById('pd-qty');
+  const v = Math.max(1, Math.min(99, (parseInt(i.value)||1) + d));
+  i.value = v;
+  pdUpdPrice();
+}
+
+function pdUpdPrice() {
+  if (!curProd) return;
+  const q = Math.max(1, parseInt(document.getElementById('pd-qty').value)||1);
+  const total = curProd.price * q;
+  const parts = total.toFixed(2).split('.');
+  document.getElementById('pd-box-int').textContent = parts[0];
+  document.getElementById('pd-box-dec').textContent = ',' + parts[1];
+}
+
+function pdComprar() {
+  if (!curProd) return;
+  const q = Math.max(1, parseInt(document.getElementById('pd-qty').value)||1);
+  addCart(curProd.id, curProd.name, curProd.emoji, curProd.price, curProd.stock);
+  const total = curProd.price * q;
+  document.getElementById('m-prod').textContent = curProd.name;
+  document.getElementById('m-price').textContent = `R$ ${total.toFixed(2).replace('.',',')}`;
+  const qd = document.getElementById('qr-gen'); qd.innerHTML = '';
+  try { new QRCode(qd, {text:'5532984808144',width:158,height:158,colorDark:'#000',colorLight:'#fff',correctLevel:QRCode.CorrectLevel.H}); }
+  catch(e) {}
+  document.getElementById('pix-modal').classList.add('active');
+}
+
+function pdAddCart() {
+  if (!curProd) return;
+  const q = Math.max(1, parseInt(document.getElementById('pd-qty').value)||1);
+  for(let i=0;i<q;i++) addCart(curProd.id, curProd.name, curProd.emoji, curProd.price, curProd.stock);
+  const btn = document.getElementById('pd-addcart');
+  btn.textContent = '✅ Adicionado!';
+  btn.style.borderColor = 'var(--green)';
+  setTimeout(() => { btn.textContent = 'Adicionar ao carrinho'; btn.style.borderColor = ''; }, 2000);
+}
+
+/* ===== STATE ===== */
+let cartItems = [];
+let termosOk = true;
+
+/* ===== UTILS ===== */
+function fmt(n){ return n.toFixed(2).replace('.',','); }
+
+function showToast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(()=> t.classList.remove('show'), 2500);
+}
+
+function copyT(txt, btn){
+  navigator.clipboard.writeText(txt).then(()=>{
+    const o = btn.textContent;
+    btn.textContent = '✅ COPIADO!'; btn.style.background = '#006622';
+    setTimeout(()=>{ btn.textContent = o; btn.style.background = ''; }, 2200);
+  });
+}
+
+/* ===== NAVIGATION ===== */
+function goHome(){
+  document.getElementById('page-home').style.display = 'block';
+  document.getElementById('page-cart').style.display = 'none';
+  document.getElementById('page-product').style.display = 'none';
+  window.scrollTo({top:0,behavior:'smooth'});
+  closeMod();
+}
+
+function goCart(){
+  document.getElementById('page-home').style.display = 'none';
+  document.getElementById('page-product').style.display = 'none';
+  document.getElementById('page-cart').style.display = 'block';
+  renderCart();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+/* ===== CART ===== */
+function addCart(id, name, emoji, price, stock){
+  const existing = cartItems.find(x => x.id === id);
+  if(existing){ existing.qty = Math.min(stock, existing.qty + 1); }
+  else { cartItems.push({id, emoji, name, price, qty:1, stock}); }
+  updateCartBadge();
+  showToast(`✅ ${name.substring(0,28)}... adicionado!`);
+}
+
+function updateCartBadge(){
+  const total = cartItems.reduce((s,i)=> s+i.qty, 0);
+  document.getElementById('cart-badge').textContent = total;
+}
+
+function renderCart(){
+  const list = document.getElementById('cart-items-list');
+  const empty = document.getElementById('empty-msg');
+  const badge = document.getElementById('items-badge');
+  const total = cartItems.reduce((s,i)=> s + i.price * i.qty, 0);
+
+  if(cartItems.length === 0){
+    list.innerHTML = ''; empty.style.display = 'block';
+    badge.textContent = '0 itens';
+    document.getElementById('subtotal-val').textContent = 'R$ 0,00';
+    document.getElementById('total-val').textContent = 'R$ 0,00';
+    return;
+  }
+  empty.style.display = 'none';
+  badge.textContent = `${cartItems.length} ${cartItems.length===1?'item':'itens'}`;
+  document.getElementById('subtotal-val').textContent = `R$ ${fmt(total)}`;
+  document.getElementById('total-val').textContent = `R$ ${fmt(total)}`;
+
+  list.innerHTML = cartItems.map((item,i)=>`
+    <div class="cart-item">
+      <div class="item-top">
+        <div class="item-img">${item.emoji}</div>
+        <div class="item-name">${item.name}</div>
+        <div class="item-price">R$ ${fmt(item.price * item.qty)}</div>
+      </div>
+      <div class="item-bottom">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <div class="item-actions">
+            <button class="iabtn del-btn" onclick="removeItem(${i})">🗑️</button>
+            <button class="iabtn fast-btn">⚡</button>
+          </div>
+          <span class="item-stock">${item.stock} disponíveis</span>
+        </div>
+        <div class="qty-ctrl">
+          <button class="qty-btn-s" onclick="chQtyCart(${i},-1)">−</button>
+          <input class="qty-num-s" type="number" value="${item.qty}" min="1" max="${item.stock}" onchange="setQtyCart(${i},this.value)">
+          <button class="qty-btn-s" onclick="chQtyCart(${i},1)">+</button>
+        </div>
+      </div>
+    </div>`).join('');
+}
+
+function removeItem(i){ cartItems.splice(i,1); updateCartBadge(); renderCart(); }
+function chQtyCart(i,d){ cartItems[i].qty = Math.max(1,Math.min(cartItems[i].stock, cartItems[i].qty+d)); renderCart(); }
+function setQtyCart(i,v){ cartItems[i].qty = Math.max(1,Math.min(cartItems[i].stock, parseInt(v)||1)); renderCart(); }
+
+function toggleTermos(){
+  termosOk = !termosOk;
+  const el = document.getElementById('termos-check');
+  el.style.background = termosOk ? 'var(--green)' : '#330000';
+  el.textContent = termosOk ? '✓' : '';
+}
+
+function applyCoupon(){
+  const code = prompt('Digite seu cupom:');
+  if(code && code.toUpperCase()==='GBH10'){ showToast('✅ Cupom GBH10 aplicado!'); }
+  else if(code){ showToast('❌ Cupom inválido!'); }
+}
+
+function gerarPagamento(){
+  if(cartItems.length===0){ showToast('🛒 Carrinho vazio!'); return; }
+  const e1 = document.getElementById('email1').value;
+  const e2 = document.getElementById('email2').value;
+  if(!e1||!e2){ showToast('⚠️ Informe seu e-mail!'); return; }
+  if(e1!==e2){ showToast('⚠️ E-mails não coincidem!'); return; }
+  if(!termosOk){ showToast('⚠️ Aceite os Termos!'); return; }
+  const total = cartItems.reduce((s,i)=> s + i.price * i.qty, 0);
+  document.getElementById('m-prod').textContent = `${cartItems.length} produto(s) • ${e1}`;
+  document.getElementById('m-price').textContent = `R$ ${fmt(total)}`;
+  const qd = document.getElementById('qr-gen'); qd.innerHTML='';
+  try{ new QRCode(qd,{text:'5532984808144',width:158,height:158,colorDark:'#000',colorLight:'#fff',correctLevel:QRCode.CorrectLevel.H}); }
+  catch(e){ qd.innerHTML='<div style="width:158px;height:158px;display:flex;align-items:center;justify-content:center;color:#cc1111;font-size:.8rem;text-align:center;">Copie a chave PIX</div>'; }
+  document.getElementById('pix-modal').classList.add('active');
+}
+
+function closeMod(){ document.getElementById('pix-modal').classList.remove('active'); }
+document.getElementById('pix-modal').addEventListener('click', function(e){ if(e.target===this) closeMod(); });
+</script>
+</body>
+</html>
